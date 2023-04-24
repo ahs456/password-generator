@@ -26,7 +26,7 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 # Deployed application link
-
+https://ahs456.github.io/week-3-password-generator-project/ 
 
 # Screenshot of deployed website
 <img src="./assets/css/images/75F593E9-69AC-4C4E-A347-AD34C04A7492_1_201_a.jpeg" alt="deployed website image">
