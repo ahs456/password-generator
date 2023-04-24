@@ -54,12 +54,32 @@ confirmNumbers = window.confirm("By clicking 'OK' numbered characters will be in
 if (
   confirmLowCased === false && confirmUppCased === false && confirmSpecialCharacters === false && confirmNumbers === false) {
   window.alert("Press 'OK' to select atlest ONE character type, please try again");
-  return;
+  return null;
 }
 
+//generating final password
+var finalPassword = "";
+const completeCharacters = [];
 
+if (confirmLowCased) {
+  completeCharacters.push(lowerCasedCharacters.split(""));
+}
+if (confirmUppCased) {
+  completeCharacters.push(upperCasedCharacters.split(""));
+}
+if (confirmNumbers) {
+  completeCharacters.push(numbers.split(""));
+}
+if (confirmSpecialCharacters) {
+  completeCharacters.push(special.split(""));
+}
 
+for (var i = 0; i < passwordLength; i++) {
+  var randomChar = completeCharacters[Math.floor(Math.random() * completeCharacters.length)];
+  password += randomChar [Math.floor(Math.random() * randomChar.length)];
+}
 
+return (finalPassword)
 }
 
 
