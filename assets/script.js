@@ -7,6 +7,13 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+}
+
+function generatePassword() {
+  const lowerCaseCharacters = "abcdefghijklmnopqrstuvwxyz";
+  const upperCaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const numbers = "0123456789";
+  const special = "!@£$%^&*()'+,-./:;<=>?[]\_`{}|~#";
 
 }
 
