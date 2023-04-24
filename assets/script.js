@@ -23,23 +23,29 @@ var passwordLowCased = false;
 var passwordUppCased = false;
 
 //first window promt (number of characters)
-pLength = window.prompt("How many CHARACTERS do you want your password to contain?");
+passwordLength = window.prompt("How many CHARACTERS do you want your password to contain?");
 
 //second window alert (if password is out of password limits)
-if (pLength < 8 && pLength > 128) {
+if (passwordLength < 8 && passwordLength > 128) {
   window.alert("Password MUST be between 8-128 characters, please try again");
   return null;
 }
 //window alert (if password if less that 8 characters)
-if (pLength < 8) {
+if (passwordLength < 8) {
   window.alert("Password MUST have a minimum length of 8 characters or more, please try again");
   return null;
 }
 //window alert (if password is more than 128 characters)
-if (pLength > 128) {
+if (passwordLength > 128) {
   window.alert ("Password MUST have a maximum length of 128 characters or less, please try again");
   return null;
 }
+
+//user confirms password criteria
+confirmSpecialCharacters = window.confirm("Continue by clicking 'OK' to include special characters");
+confirmUppCased = window.confirm("Continue by clicking 'OK' to include upper cased characters");
+confirmLowCased = window.confirm("Continue by clicking 'OK' to include lower cased characters");
+confirmNumbers = window.confirm("Continue by clicking 'OK' to include number characters");
 
 
 
