@@ -1,7 +1,7 @@
 # week-3-password-generator-project
 
 # Description of project
-
+This project required me to modify a stater code and create an application that enables employess to generate random passwords based on criteria provided.
 
 # User Story
 AS AN employee with access to sensitive data
@@ -29,7 +29,7 @@ THEN the password is either displayed in an alert or written to the page
 
 
 # Screenshot of deployed website
-<img src="./assets/css/images/screenshot-of-deployed-webiste.png" alt="deployed website image">
+<img src="./assets/css/images/1D4D697A-C3AA-4625-AB9D-576B4B7C6549_1_201_a.jpeg" alt="deployed website image">
 
 # License
 N/A
