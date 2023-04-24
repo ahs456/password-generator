@@ -5,7 +5,6 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
@@ -23,9 +22,14 @@ var passwordSpecial = false;
 var passwordLowCased = false;
 var passwordUppCased = false;
 
-//first window promt
+//first window promt (number of characters)
 length = window.prompt("How many CHARACTERS do you want your password to contain?");
 
+//second window promt (if password is out of password limits)
+if (length < 8 && length > 128) {
+  window.alert("Password MUST be between 8-128 characters, please try again");
+  return;
+}
 
 
 }
