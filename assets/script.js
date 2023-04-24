@@ -79,10 +79,8 @@ for (var i = 0; i < passwordLength; i++) {
   password += randomChar [Math.floor(Math.random() * randomChar.length)];
 }
 
-return (finalPassword)
+return (password)
 }
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
