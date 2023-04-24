@@ -29,7 +29,7 @@ THEN the password is either displayed in an alert or written to the page
 
 
 # Screenshot of deployed website
-<img src="./assets/css/images/1D4D697A-C3AA-4625-AB9D-576B4B7C6549_1_201_a.jpeg" alt="deployed website image">
+<img src="./assets/css/images/75F593E9-69AC-4C4E-A347-AD34C04A7492_1_201_a.jpeg" alt="deployed website image">
 
 # License
 N/A
