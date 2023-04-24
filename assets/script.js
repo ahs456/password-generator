@@ -26,7 +26,7 @@ var passwordUppCased = false;
 passwordLength = window.prompt("How many CHARACTERS do you want your password to contain?");
 
 //second window alert (if password is out of password limits)
-if (passwordLength < 8 && passwordLength > 128) {
+if (passwordLength < 8 || passwordLength > 128) {
   window.alert("Password MUST be between 8-128 characters, please try again");
   return null;
 }
@@ -42,12 +42,10 @@ if (passwordLength > 128) {
 }
 
 //user confirms password criteria
-confirmSpecialCharacters = window.confirm("Continue by clicking 'OK' to include special characters");
-confirmUppCased = window.confirm("Continue by clicking 'OK' to include upper cased characters");
-confirmLowCased = window.confirm("Continue by clicking 'OK' to include lower cased characters");
-confirmNumbers = window.confirm("Continue by clicking 'OK' to include number characters");
-
-
+confirmSpecialCharacters = window.confirm("By clicking 'OK' special characters with be included");
+confirmUppCased = window.confirm("By clicking 'OK' upper cased characters will be included");
+confirmLowCased = window.confirm("By clicking 'OK' lower cased characters will be included");
+confirmNumbers = window.confirm("By clicking 'OK' numbered characters will be included");
 
 
 }
